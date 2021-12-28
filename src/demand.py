@@ -1,2 +1,2 @@
 def demand():
-    pass
+    print("HELLO WORLD")
