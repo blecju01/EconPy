@@ -1,2 +1,2 @@
 def demand():
-    print("HELLO WORLD")
+    print("HELLO HELLO")
