@@ -1,4 +1,4 @@
-def demand():
+def demand(equation):
     # Parse equation
     """
      --expect a string of the form Q = P1 + P2 +
