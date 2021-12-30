@@ -1,3 +1,6 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
 def demand(equation):
     # Parse equation
     """
@@ -19,3 +22,4 @@ def supply(equation):
 # demand("Q = 2P + 200")
 # demand('Q = 2P + 200')
 # demand("Q = 5P + 300")
+
