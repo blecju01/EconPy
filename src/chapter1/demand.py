@@ -17,16 +17,29 @@ def plotDemand(slope, intercept, x_range):
     y = slope*x+intercept
     plt.plot(x, y, '-r', label='Q={}P+{}'.format(slope, intercept))
     plt.title('Graph of Q={}P+{}'.format(slope,intercept))
-    plt.xlabel('x', color='#1C2833')
-    plt.ylabel('y', color='#1C2833')
+    plt.xlabel('Quantity Demanded', color='#1C2833')
+    plt.ylabel('Price', color='#1C2833')
     plt.legend(loc='upper left')
     plt.grid()
     plt.show()
 
-def supply(equation):
+def plotSupply(slope, intercept, x_range):
     # Parse equation
     # Determine supply curve relationship
     # Return graphic using matplotlib & numpy
+    if type(slope) is not int and type(slope) != float:
+        raise TypeError("ERROR: Slope must be an integer or float value!")
+    if type(intercept) is not int and type(intercept) != float:
+        raise TypeError("ERROR: Intercept must be an integer or float value!")
+    x = np.linspace(0,intercept,intercept//5)
+    y = slope*x+intercept
+    plt.plot(x, y, '-r', label='Q={}P+{}'.format(slope, intercept))
+    plt.title('Graph of Q={}P+{}'.format(slope,intercept))
+    plt.xlabel('Quantity Demanded', color='#1C2833')
+    plt.ylabel('Price', color='#1C2833')
+    plt.legend(loc='upper left')
+    plt.grid()
+    plt.show()
     pass
 
 # plotDemand(4.5, -1, [0,0])
